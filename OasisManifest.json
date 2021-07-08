@@ -44,5 +44,5 @@
       },
     "memoryLimit": 524288000,
     "changelog": "* Enable basicAuth flag\n",
-    "dockerImage": "cloudron/com.transmissionbt.cloudronapp:20210219-201054-9140752a3"
+    "dockerImage": "nginx:1.21.1"
   }
