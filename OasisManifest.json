@@ -26,22 +26,19 @@
       "mongodb":{},
       "PostgreSQL":{}
     },
-    "tcp_ports": {
-      "TORRENT_PORT": {
-        "title": "Torrent Port",
-        "description": "TCP port for BitTorrent traffic",
-        "defaultValue": 51413,
-        "containerPort":""
-      }
-    },
-    "udpPorts": {
-        "VPN_PORT": {
+    "tcp_ports": [{
+      "title": "Torrent Port",
+      "description": "TCP port for BitTorrent traffic",
+      "defaultValue": 51413,
+      "containerPort":""
+    }],
+    "udp_ports": 
+        [{
           "title": "VPN Port",
           "description": "Port over which OpenVPN server listens",
           "defaultValue": 11194,
           "containerPort": 1194
-        }
-      },
+        }],
     "memoryLimit": 524288000,
     "changelog": "* Enable basicAuth flag\n",
     "dockerImage": "nginx:1.21.1"
