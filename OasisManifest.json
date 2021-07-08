@@ -1,0 +1,48 @@
+{
+    "id": "com.transmissionbt.cloudronapp",
+    "title": "Transmission",
+    "author":{"name":"Mehdi Kouhen","email":"arantes555@gmail.com"},
+   
+    "description": "This app packages Transmission <upstream>3.00</upstream>\n\n### Overview\n\nTransmission is a cross-platform BitTorrent client.\n\n### Features\n\n* Uses fewer resources than other clients\n* Daemon ideal for servers, embedded systems, and headless use\n* All these can be remote controlled by Web and Terminal clients\n* Local Peer Discovery\n* Full encryption, DHT, µTP, PEX and Magnet Link support\n\n### Configuration\n\nBy default, this app is configured to, at the end of a download, automatically hard-link the downloaded files from\n`/app/data/files/Downloading/` to `/app/data/files/Downloaded/`. This allows potential post-processing by other apps of\nthe file in `Downloaded`, without interfering with seeding from the file in `Downloading`.\n\nAlso, it seeds torrents up to a ratio of 2, then automatically remove them, and removes the corresponding files from\n`Downloading`.\n\nTo change the configuration, you must edit the file `/app/data/transmission-config/modifiable.settings.json` then\nrestart the app. Changing configuration from the web interface **will not** work.\n",
+    "slogan": "Transmission is a cross-platform BitTorrent client",
+    "tags": [
+      "torrent",
+      "bittorrent"
+    ],
+    "icon": "file://logo.png",
+    "app_screenshot_link": [
+      "https://screenshots.cloudron.io/com.transmissionbt.cloudronapp/img01.png"
+    ],
+    "health_chec_path": "/transmission/web/",
+    "tcp_port": 9091,
+    "web_site": "https://transmissionbt.com/",
+    "version": "1.0.1",
+    "min_docker_version": "6.0.0",
+    "oasis_manifest_version": 1,
+    "plugin": {
+      "localstorage": {},
+      "mysql":{},
+      "redis":{},
+      "mongodb":{},
+      "PostgreSQL":{}
+    },
+    "tcp_ports": {
+      "TORRENT_PORT": {
+        "title": "Torrent Port",
+        "description": "TCP port for BitTorrent traffic",
+        "defaultValue": 51413,
+        "containerPort":""
+      }
+    },
+    "udpPorts": {
+        "VPN_PORT": {
+          "title": "VPN Port",
+          "description": "Port over which OpenVPN server listens",
+          "defaultValue": 11194,
+          "containerPort": 1194
+        }
+      },
+    "memoryLimit": 524288000,
+    "changelog": "* Enable basicAuth flag\n",
+    "dockerImage": "cloudron/com.transmissionbt.cloudronapp:20210219-201054-9140752a3"
+  }
