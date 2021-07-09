@@ -29,14 +29,12 @@
     "tcp_ports": [{
       "title": "Torrent Port",
       "description": "TCP port for BitTorrent traffic",
-      "extranet_port": 51413,
       "container_port":51413
     }],
     "udp_ports": 
         [{
           "title": "VPN Port",
           "description": "Port over which OpenVPN server listens",
-          "extranet_port": 11194,
           "container_port": 1194
         }],
     "memoryLimit": 524288000,
