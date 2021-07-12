@@ -13,7 +13,8 @@
     "app_screenshot_link": [
       "https://screenshots.cloudron.io/com.transmissionbt.cloudronapp/img01.png"
     ],
-    "health_chec_path": "/transmission/web/",
+    "health_check_path": "/transmission/web/",
+    "category": "应用分类",
     "tcp_port": 9091,
     "web_site": "https://transmissionbt.com/",
     "version": "1.0.1",
