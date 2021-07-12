@@ -39,6 +39,6 @@
           "container_port": 1194
         }],
     "memoryLimit": 524288000,
-    "changelog": "* Enable basicAuth flag\n",
+    "change_log": "* Enable basicAuth flag\n",
     "dockerImage": "nginx:1.21.1"
   }
