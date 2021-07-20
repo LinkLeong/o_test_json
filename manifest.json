@@ -1,0 +1,30 @@
+{
+    "env":[
+        {
+            "name":"env1",
+            "desc":"该字段的描述"
+        }
+    ],
+    "udp_arr":[
+        {
+            "desc":"这是改端口的说明",
+            "container_port":4040
+        }
+    ],
+    "tcp":6060,
+    "tcp_arr":[
+        {
+            "desc":"这是改端口的说明",
+            "container_port":4040
+        }
+    ],
+    "ico":"远程图标链接",
+    "category":"应用的分类",
+    "screenshot_link":["",""],
+    "title":"软件名称",
+    "tagline":"软件宣传语",
+    "description":"软件说明",
+    "tags":["",""],
+    "image":"nginx",
+    "image_version":"1.12.1"
+}
