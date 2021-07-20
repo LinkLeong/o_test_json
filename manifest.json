@@ -1,18 +1,18 @@
 {
-    "env":[
+    "envs":[
         {
             "name":"env1",
             "desc":"该字段的描述"
         }
     ],
-    "udp_arr":[
+    "udp_ports":[
         {
             "desc":"这是改端口的说明",
             "container_port":4040
         }
     ],
-    "tcp":6060,
-    "tcp_arr":[
+    "tcp_port":6060,
+    "tcp_ports":[
         {
             "desc":"这是改端口的说明",
             "container_port":4040
