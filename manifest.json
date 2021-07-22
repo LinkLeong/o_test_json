@@ -2,23 +2,35 @@
     "envs":[
         {
             "name":"env1",
-            "desc":"该字段的描述"
+            "desc":"该字段的描述",
+            "value":"这是默认值",
+            "type":2
         }
     ],
     "udp_ports":[
         {
             "desc":"这是改端口的说明",
-            "container_port":4040
+            "container_port":4040,
+            "type":2
         }
     ],
     "tcp_port":6060,
     "tcp_ports":[
         {
             "desc":"这是改端口的说明",
-            "container_port":4040
+            "container_port":4040,
+            "type":2
         }
     ],
-    "ico":"远程图标链接",
+    "volumes":[
+        {
+            "desc":"配置目录",
+            "container_path":"/config",
+            "type":2
+        }
+    ],
+    "network_mode":"host",
+    "icon":"远程图标链接",
     "category":"应用的分类",
     "screenshot_link":["",""],
     "title":"软件名称",
@@ -26,5 +38,7 @@
     "description":"软件说明",
     "tags":["",""],
     "image":"nginx",
-    "image_version":"1.12.1"
+    "image_version":"1.12.1",
+    "index":"/web"
 }
+
