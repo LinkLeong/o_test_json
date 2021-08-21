@@ -1,44 +1,65 @@
 {
-    "envs":[
-        {
-            "name":"env1",
-            "desc":"该字段的描述",
-            "value":"这是默认值",
-            "type":2
-        }
+    "configures": {
+        "envs": [
+            {
+                "name": "env1",
+                "desc": "该字段的描述",
+                "value": "这是默认值",
+                "type": 2
+            }
+        ],
+        "udp_ports": [
+            {
+                "desc": "这是改端口的说明",
+                "container_port": 4040,
+                "type": 2
+            }
+        ],
+        "tcp_ports": [
+            {
+                "desc": "这是改端口的说明",
+                "container_port": 4040,
+                "type": 2
+            }
+        ],
+        "volumes": [
+            {
+                "desc": "配置目录",
+                "container_path": "/config",
+                "type": 4
+            }
+        ],
+        "devices": [
+            {
+                "desc": "网卡位置",
+                "container_path": "/de/de",
+                "value": "/dev/net",
+                "type": 2
+            }
+        ]
+    },
+    "tcp_port": 6060,
+    "network_mode": "host",
+    "icon": "远程图标链接",
+    "category": "应用的分类",
+    "screenshot_link": [
+        "",
+        ""
     ],
-    "udp_ports":[
-        {
-            "desc":"这是改端口的说明",
-            "container_port":4040,
-            "type":2
-        }
+    "title": "nginx",
+    "tagline": "软件宣传语",
+    "description": "Nginx is an open source reverse proxy server for HTTP, HTTPS, SMTP, POP3, and IMAP protocols, as well as a load balancer, HTTP cache, and a web server (origin server). The nginx project started with a strong focus on high concurrency, high performance and low memory usage. It is licensed under the 2-clause BSD-like license and it runs on Linux, BSD variants, Mac OS X, Solaris, AIX, HP-UX, as well as on other *nix flavors. It also has a proof of concept port for Microsoft Windows.",
+    "tags": [
+        "nginx",
+        "container"
     ],
-    "tcp_port":6060,
-    "tcp_ports":[
-        {
-            "desc":"这是改端口的说明",
-            "container_port":4040,
-            "type":2
-        }
-    ],
-    "volumes":[
-        {
-            "desc":"配置目录",
-            "container_path":"/config",
-            "type":2
-        }
-    ],
-    "network_mode":"host",
-    "icon":"远程图标链接",
-    "category":"应用的分类",
-    "screenshot_link":["",""],
-    "title":"软件名称",
-    "tagline":"软件宣传语",
-    "description":"软件说明",
-    "tags":["",""],
-    "image":"nginx",
-    "image_version":"1.12.1",
-    "index":"/web"
+    "image": "nginx",
+    "image_version": "1.12.1",
+    "index": "",
+    "author": "link",
+    "min_memory": 200,
+    "min_disk": 200,
+    "tip": "这是警告信息",
+    "thumbnail": "缩略图.pn",
+    "healthy": "健康检查"
 }
-
